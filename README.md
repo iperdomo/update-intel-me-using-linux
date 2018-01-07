@@ -340,12 +340,14 @@ shows how to mount and customize our WinPE.
 ## Burning the created media to a USB drive
 
 * Make sure to shutdown the Windows 10 virtual machine
+
 * We have a bootable media under a .vdi format and we need to convert it to be able to _burn_ it
+
 * Using `VBoxManage` we'll convert the `.vdi` in raw format. __NOTE:__ Change the command to the correct path to `usb.vdi`
 
 
     VBoxManage clonehd usb.vdi winpe_amd.img --format RAW
-	0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+    0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
     Clone medium created in format 'RAW'. UUID: b4e20b0b-302d-44d4-8b10-40801fb35b88
 
 
